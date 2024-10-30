@@ -1,5 +1,8 @@
-# Desenvolvendo o Dio Bank
-desenvolvido por [Nathally Souza](https://github.com/nathyts)
+# Desenvolvendo o Dio Bank Backend
+
+Desenvolvido por [Alan Rocha](https://github.com/alanrochagomes)
+
+Desafio desenvolvido por [Nathally Souza](https://github.com/nathyts)
 
 #### Projeto desenvolvido com conceitos básicos de typescript
 
@@ -17,6 +20,7 @@ desenvolvido por [Nathally Souza](https://github.com/nathyts)
 3 - Execute o projeto
 
     npm run dev
+
 
 #### Desafios
 [ ] Incluir os testes unitários pendentes no controller
