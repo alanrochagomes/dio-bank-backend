@@ -1,4 +1,7 @@
 import express, { Request, Response } from "express";
+import { UserController } from "./controllers/UserController";
+
+const userController = new UserController();
 
 const server = express();
 
@@ -8,10 +11,6 @@ server.get("/", (request: Request, response: Response) => {
   return response.status(200).json({ message: "DioBank Api" });
 });
 
-server.post("/user", (request: Request, response: Response) => {
-  const body = request.body;
-  console.log(body);
-  return response.status(201).json({ message: "Usuario criado" });
-});
+server.post("/user", userController.createUser);
 
 server.listen(5000, () => console.log("Server on"));
