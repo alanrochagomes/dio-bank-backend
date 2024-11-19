@@ -12,5 +12,6 @@ server.get("/", (request: Request, response: Response) => {
 });
 
 server.post("/user", userController.createUser);
+server.get("/user", userController.getAllUsers);
 
 server.listen(5000, () => console.log("Server on"));
