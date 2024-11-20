@@ -1,4 +1,4 @@
-interface User {
+export interface User {
   name: string;
   email: string;
 }
@@ -24,7 +24,7 @@ export class UserService {
     };
 
     this.db.push(user);
-    console.log("DB atualizado", this.db);
+    console.log("DB updated", this.db);
   };
 
   getAllUsers = () => {
