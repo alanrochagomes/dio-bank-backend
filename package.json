@@ -7,7 +7,11 @@
     "build": "rimraf ./build && tsc",
     "start": "node build/index.js",
     "dev": "ts-node-dev src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:create": "npm run typeorm migration:create -n",
+    "migration:run": "npx typeorm-ts-node-commonjs migration:run -d src/database/index.ts",
+    "migration:revert": "npx typeorm-ts-node-commonjs migration:revert -d src/database/index.ts"
   },
   "keywords": [],
   "author": "",
